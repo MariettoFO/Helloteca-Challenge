@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Helloteca Challenge</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    <script src='js/index.js'></script>
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<div id = "mydiv"> </div>
+<!-- Nombre (name) no editable
+Apellidos (surname) no editable
+Email (email) No editable
+Teléfono (phone) Editable y obligatorio
+Edad (age) Editable y obligatorio
+Importe Préstamo (loan_amount) Integer Editable, obligatorio tipo moneda > 10 && <= 1000 importes válidos
+Fecha a conseguir el préstamo (loan_date) date(Y-m-d, 2020-01-20) sólo con fechas a futuro
+Tiempo a devoler - años (loan_weeks) Integer, Editable, obligatorio, seleccionable de 1 a 20
+Aceptar térnimos y condiciones (check), obligatorio, para aceptar términos con enlace a: https://cloudframework.io/terminos-y-condiciones/
+Botón de Enviar solicitud -->
+<form>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" readonly>
+    </div>
+    <div class="form-group">
+        <label for="surname">Surname</label>
+        <input type="text" class="form-control" id="surname" readonly>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" readonly>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="number" class="form-control" id="phone">
+    </div>
+    <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" class="form-control" id="age">
+    </div>
+    <div class="form-group">
+        <label for="loan_amount">Loan Amount</label>
+        <input type="number" class="form-control" id="loan_amount">
+    </div>
+    <div class="form-group">
+        <label for="loan_date">Loan Date</label>
+        <input type="date" class="form-control" id="loan_date">
+    </div>
+    <div class="form-group">
+        <label for="loan_weeks">Loan Weeks</label>
+        <input type="date" class="form-control" id="loan_weeks">
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check" required>
+            <label class="form-check-label" for="check">
+            Agree to
+            <a href="https://cloudframework.io/terminos-y-condiciones/"> terms and conditions</a>
+            </label>
+        </div>
+    </div>
+    <button type="button" class="btn btn-success">Success</button>
+</form>
+</body>
+</html>
