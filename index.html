@@ -39,7 +39,7 @@
             <div class="form-row d-flex mb-3">
                 <div class="col-auto w-75">
                     <label for="loan_amount">Loan Amount *</label>
-                    <input type="number" class="form-control" id="loan_amount" min="0.00" step="0.01" onchange="validateLoanAmount()">
+                    <input type="number" class="form-control" id="loan_amount" min="0" step="1" onchange="validateLoanAmount()">
                 </div>
                 <div class="col-auto w-25">
                     <label for="loan_amount">Coin</label>
@@ -51,8 +51,8 @@
                 </div>
             </div>
             <div class="form-group mb-3">
-                <label for="loan_date">Loan Date</label>
-                <input type="date" class="form-control" min="2020-01-20" id="loan_date">
+                <label for="loan_date">Loan Date *</label>
+                <input type="date" class="form-control" id="loan_date">
             </div>
             <div class="form-group mb-3">
                 <label for="loan_weeks">Loan Weeks *</label>
